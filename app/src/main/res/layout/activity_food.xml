@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    android:orientation="vertical"
+    tools:context=".Food">
+
+    <TextView
+        android:id="@+id/judulMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lexend_bold"
+        android:text="FOODS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_output"
+        tools:itemCount="1"/>
+</LinearLayout>

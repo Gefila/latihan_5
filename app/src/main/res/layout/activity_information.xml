@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".Food">
+
+    <TextView
+        android:id="@+id/judulInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lexend_bold"
+        android:text="INFORMATION"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/informationRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/judulInformation"
+        tools:listitem="@layout/list_output_information"
+        tools:itemCount="5"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:onClick="tambah"
+        app:srcCompat="@android:drawable/ic_input_add" />
+</RelativeLayout>
